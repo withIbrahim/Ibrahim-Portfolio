@@ -1,0 +1,38 @@
+/* Profile image + ring: makes the ring align exactly with the image */
+.img-place {
+  width: 220px;              /* adjust to your preferred avatar size */
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;          /* crop image to the rounded container */
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 auto;            /* center inside the column */
+  background: transparent;
+}
+
+/* Image fills the container exactly; border applied to img so it matches visible area */
+.img-place img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* preserves crop while filling container */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 6px solid #ffffff; /* ring color + thickness - change color if needed */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Responsive sizes */
+@media (max-width: 991px) {
+  .img-place {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-place {
+    width: 140px;
+    height: 140px;
+  }
+}
