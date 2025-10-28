@@ -8,6 +8,8 @@
   box-sizing: border-box;
   margin: 0 auto;            /* center inside the column */
   background: transparent;
+  border: 6px solid #ffffff; /* ring color + thickness - change color if needed */
+
 }
 
 /* Image fills the container exactly; border applied to img so it matches visible area */
@@ -18,7 +20,7 @@
   object-fit: cover;         /* preserves crop while filling container */
   border-radius:60 %;
   box-sizing: border-box;
-  ;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12)  ;
 }
 
 /* Responsive sizes */
