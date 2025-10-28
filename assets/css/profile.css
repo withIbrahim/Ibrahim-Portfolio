@@ -18,7 +18,6 @@
   object-fit: cover;         /* preserves crop while filling container */
   border-radius:60 %;
   box-sizing: border-box;
-  border: 6px solid #ffffff; /* ring color + thickness - change color if needed */
   ;
 }
 
